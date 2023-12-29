@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram layout</title>
+</head>
+<style>
+    img{
+        height: 200px;
+        width: 200px;
+    }
+</style>
+<body>
+    <h2>this account is @ <%= data.name %>
+    </h2>
+    <button>Followers <%= data.followers %></button>
+    <button>Folling <%= data.following %></button>
+ 
+    <br>
+    <br>
+    <hr style="margin-top: 25px;">
+
+   <%  for(post of data.posts){ %>
+
+    <img src="<%= post.image %>";<br>
+      <p>likes : <%= post.likes %>  comments : <%= post.comments %> </p>
+             
+
+      <%}  %>
+     
+
+</body>
+
+</html>
