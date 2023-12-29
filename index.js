@@ -10,7 +10,7 @@ app.set("view engine" , "ejs");
 
 
 app.get("/",(req,res) =>{
-    res.send("you Re on the home page")
+    res.send("you are on the home page")
 });
 
 app.get("/ig/:username" , (req , res) =>{
